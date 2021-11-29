@@ -1,0 +1,325 @@
+/*@font-face {
+  // Defining what the font will be called
+  font-family: open-sans;
+  // Linking to the font file
+  src: url(memtYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWqWuU6F.woff2);
+}
+body {
+  font-family: ;
+}*/
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@1,300&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+body{
+  font-family: 'Open Sans';
+  font-weight: 600;
+  overflow-x: hidden;
+  width: 102%;
+}
+
+/*#header{
+  padding: 5px;
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  transition: 0.4s;
+  z-index: 99;
+}*/
+
+.content{
+  background-color: #04133d;
+}
+
+.card{
+transition: all .2s ease-in-out;
+} 
+.card:hover{
+transform: scale(1.1); 
+cursor: pointer;
+border-color:#f7931d;
+}
+
+
+        .btn{
+          overflow-x: hidden;
+            color:#fff;
+            background-color: #04133d;
+            border-color:#ffff;
+            border-width:2px;
+            -webkit-transition: background-color 300ms ease-in-out, color 300ms ease-in-out;
+            /*transition: background-color 300ms ease-in-out, color 300ms ease-in-out;*/
+            transition: .2s;
+        }
+            .btn:hover{
+                background-color:#f7931d;
+                color:black;
+                border-color: #f7931d;
+            }
+
+
+.btn:focus{
+    background-color:#f7931d;
+    color:white;
+    border-color:#f7931d;
+}
+
+
+ .banner{
+     margin-top: -15px;
+ }
+ 
+ 
+  /* Style the top navigation bar */
+  .navbar {
+    margin-top: -100px;
+    margin-left: 250px;
+    padding: 25px 5px;
+    margin-bottom: -50px;
+  }
+
+/* Style the navigation bar links */
+  .navbar a {
+margin-left: 1px;
+color: black;
+font-family: 'Roboto Condensed', sans-serif;
+text-decoration: none;
+text-align: center;
+transition: .3s ease-in-out;
+margin-bottom: -45px;
+  }
+/* Change color on hover */
+  .navbar a:hover {
+      background-color: #f7931d;
+      color:white;
+      box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  }
+
+   /*logo*/
+   .logo {
+    margin-left: 90px;
+    background-color: white;
+    margin-top:5px;
+    margin-bottom: 25px; 
+}
+
+.logo:hover {
+    cursor: pointer;
+    opacity: .85;
+}
+
+
+
+/* Login Button and Form */
+
+ /*Icon*/
+ .icon {
+  border: none;
+  background-color: transparent;
+
+}
+
+
+/* The form (background) */
+.form {
+  display: none; 
+  position: fixed;
+  z-index: 1000000; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgba(0,0,0,0.4); 
+  padding-top: 60px;
+  font-family: 'Open Sans';
+}
+
+/* form Content/Box */
+.form-content {
+  background-color: white;
+  margin: 5% auto 15% auto; 
+  border: 1px solid lightgrey;
+  width: 80%; 
+}
+
+
+/* Email and password boxes */
+input[type=email], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: block;
+  border: 1px solid black;
+  box-sizing: border-box;
+  }
+
+  .close:hover{
+  color: auto;
+  cursor: pointer;
+  }
+
+
+
+  .login {
+      background-color: #f7931d;
+      padding: 14px 20px;
+      margin: 8px 0;
+      border: none;
+      cursor: pointer;
+      width: 100%;
+      transition: .4s;
+    }
+    
+    .login:hover {
+      opacity: .85;
+      color: white;
+    }
+
+
+    /* New Account Button*/
+    .new-account{
+      
+      width: auto;
+      padding: 10px 18px;
+      background-color: white;
+      border-color: 2px black;
+      color: black;
+      margin-left: 15px;
+      margin-bottom: 15px;
+      transition: .4s;
+    }
+
+    .new-account:hover{
+      background-color: black;
+      border-color: 2px white;
+      color: white;
+    }
+
+/*Cancel Button*/
+  .cancelbtn {
+      width: auto;
+      padding: 10px 18px;
+      background-color: rgb(18, 18, 78);
+      color: white;
+      margin-left: 15px;
+      margin-bottom: 15px;
+      transition: .4s;
+}
+
+.cancelbtn:hover{
+  opacity: .9;
+}
+
+.container {
+padding: 20px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+  padding-bottom: 15px;
+  margin-right: 15px;
+  margin-bottom: 15px;
+}
+
+.animate {
+  -webkit-animation: zoomanimation .6s;
+  animation: zoomanimation .6s;
+}
+
+@-webkit-keyframes zoomanimation {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+@keyframes zoomanimation {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+
+
+
+.display-5{
+  font-family: 'Open Sans', sans-serif;
+  font-style: italic;
+  color:#f7931d;
+  font-weight:800;
+  text-shadow: 6px 6px 0px rgba(0,0,0,0.2);
+}
+
+.lead{
+  margin-top:69vh;
+  color:#fff;
+  font-size:1.438rem;
+  text-align:center;
+  font-weight:500;
+  font-style: italic;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.display-1{
+  color:#fff;
+  text-shadow: 6px 6px 0px rgba(0,0,0,0.2);
+  font-weight:800;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.jumbotron{
+  background-image:url(images/bAnner.jpg);
+  background-repeat: no-repeat;
+  margin-top: 50px;
+  margin-bottom: -25px;
+}
+
+
+/*Footer CSS*/
+
+#footer {
+  background-color: #04133e; 
+
+  color: #ffffff !important;
+
+  color: #ffffff !important;
+
+  width:100%;
+
+  font-size:16px;
+
+  
+
+
+}
+
+#footer a { color: #fff !important; text-decoration: none; }
+
+#footer a:hover { color: #f7941d !important; }
+
+.col-3{
+width:33%;
+}
+
+
+h3{
+font-size:14px;
+font-weight: bold;
+}
+.secondary{
+text-align:center;
+}
+.left{
+text-align: center;
+background-color: #04133e;
+color:#fff;
+padding-top: 3rem;
+padding-bottom: 2rem;
+}
+.f2{
+line-height:2em;
+}
+.f1{
+line-height:2em;
+}
+.f3{
+line-height:2em;
+}

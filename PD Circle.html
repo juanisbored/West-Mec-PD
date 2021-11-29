@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="icon" type="image/x-icon" href="Images/Arrows Orange Gradient.png">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PD-Circle</title>
+  
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,800&display=swap" rel="stylesheet">
+
+   
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<link href="style.css" rel="stylesheet">
+
+
+</head>
+<body >
+
+
+  <header id="header" style="width: 100%;" class=" bg-white  sticky-sm-top sticky-top">
+    <div class="d-flex bd-highlight">
+      <div class="logo p-2 w-100 bd-highlight">
+          <img class="mt-3 mb-1 m-5 img-fluid bg-transparent logo" src="Images/Logo.png"  >
+       
+      </div>
+      <div class="p-2 flex-shrink-1 bd-highlight">
+        <button class="me-5 pe-5 mt-2 m-5 p-4 img-fluid sticky-sm-top icon" onclick="document.getElementById('Form').style.display='block'">
+          <!--<img class="img-fluid" src="Images/LoginIcon .png" alt="Icon" style="height: 40px;" >-->
+          <svg xmlns="http://www.w3.org/2000/svg" style="height: 40px;" fill="currentColor" class=" bi bi-person-fill" viewBox="0 0 16 16">
+            <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+          </svg>
+        </button>
+        
+        <div id="Form" class="form">
+          <form class="form-content animate" action="/action_page.php" method="post">  
+            <div class="container" style="background-color:white">
+              <label for="email"><b>Email</b></label>
+              <input type="email" id="email" placeholder="Enter Email" name="email" required>
+        
+              <label for="psw"><b>Password</b></label>
+              <input type="password" id="psw"
+              pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 6 or more characters"  
+              placeholder="Enter Password" name="psw" required>
+                
+              <button id="submit" type="submit" class="login">Login</button>
+            </div>
+            <button type="button" onclick="document.getElementById('Form').style.display='none'" class="cancelbtn">Cancel</button>
+             <button type="button" class="new-account">New Account</button>
+              <span class="psw">Forgot<a href="#"> password?</a></span>
+            </div>
+          </form> 
+      </div>
+    </div>
+    
+    
+    
+    
+    
+    
+    
+    <nav class="sticky-sm-top navbar navbar-expand-lg navbar-light ">
+      <div class="container">
+          <button class="clps navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+    
+          <div class="collapse navbar-collapse" id="navmenu" >
+              <ul class="navbar-nav">
+                  <li class="nav-item">
+                      <a href="#" class="p-4 nav-link">About</a>
+                  </li>
+                  <li class="nav-item">
+                      <a href="#" class="p-4 nav-link">High School Students</a>
+                  </li>
+                  <li class="nav-item">
+                      <a href="#" class="p-4 nav-link">Adult Students</a>
+                  </li>
+                  <li class="nav-item">
+                      <a href="#" class="p-4 nav-link">Partners & Employes</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="p-4 nav-link">Community</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="p-4 nav-link">Counselors & Educators</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="p-4 nav-link">Apply Now
+                </a>
+            </li>
+              </ul>
+          </div>
+      </div>
+    </nav>
+  </header>
+
+    
+  <div class="jumbotron jumbotron-fluid ">
+    <div class="container">
+      <h1 class="display-5">WELCOME TO WEST-MEC <div class="display-1">PROFESSIONAL DEVELOPMENT</div></h1>
+      <p class="lead pb-5">From whatever walk of life, you’ve found us, we are committed to your growth. We believe growth is a journey and we hope to be a part of your story. Explore our series of classes. A better US through a better YOU begins now.</p>
+    </div>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <div class="content row">
+      <div style="text-align: center;" class="col-sm p-3">
+          <button type="button" onclick="window.open('https://pdcircle.west-mec.org/courses/list') "  class="rounded-pill px-5 btn btn-lg px-5 m-5">Course List</button>
+          <button type="button" onclick="window.open('https://pdcircle.west-mec.org/courses/calendar') "  class="rounded-pill px-5 btn btn-lg px-5 m-5">Course Calendar</button>
+          <button type="button" onclick="window.open('https://pdcircle.west-mec.org/courses/search')"  class="rounded-pill px-5 btn btn-lg px-5 m-5">Search Courses</button>
+      </div>
+  </div>
+
+  <div class="content1 mt-5">
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col d-flex justify-content-center">
+          <div class="card text-center" style="width: 20rem;">
+            <img src="undraw_Checklist__re_2w7v.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Certification Series</h5>
+              <p class="card-text"></p>
+              <a href="https://pdcircle.west-mec.org/courses/certification" target="_blank" class="btn px-3">Get Started</a>
+            </div>
+          </div>
+        </div>
+        <div class="col d-flex justify-content-center">
+            <div class="card text-center" style="width: 20rem;">
+                <img src="undraw_stand_out_1oag.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">CTSO Series</h5>
+                  <p class="card-text"></p>
+                  <a href="https://pdcircle.west-mec.org/courses/ctso"  target="_blank" class="btn px-3">Get Started</a>
+                </div>
+              </div>
+        </div>
+        <div class="col d-flex justify-content-center">
+        <div class="card text-center" style="width: 20rem;">
+                <img src="undraw_exams_g4ow.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                <h5 class="card-title">Student Services Series</h5>
+                <p class="card-text"></p>
+                <a href="https://pdcircle.west-mec.org/courses/student-services" target="_blank" class="btn px-3">Get Started</a>
+                </div>
+            </div>
+        </div>
+        <div class="col d-flex justify-content-center">
+        <div class="card text-center" style="width: 20rem;">
+                <img src="undraw_programming_2svr.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                <h5 class="card-title">Technology Series</h5>
+                <p class="card-text"></p>
+                <a href="https://pdcircle.west-mec.org/courses/technology" target="_blank" class="btn px-3">Get Started</a>
+                </div>
+            </div>
+        </div>
+        <div class="col d-flex justify-content-center">
+        <div class="card text-center" style="width: 20rem;">
+                <img src="undraw_lightbulb_moment_re_ulyo.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                <h5 class="card-title">Think Tank</h5>
+                <p class="card-text"></p>
+                <a href="https://pdcircle.west-mec.org/courses/think-tank" target="_blank" class="btn px-3">Get Started</a>
+                </div>
+            </div>
+        </div>
+        <div class="col d-flex justify-content-center">
+        <div class="card text-center" style="width: 20rem;">
+                    <img src="undraw_selection_re_ycpo.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                    <h5 class="card-title">All Courses</h5>
+                    <p class="card-text"></p>
+                    <a href="https://pdcircle.west-mec.org/courses/list" target="_blank" class="btn px-3">Get Started</a>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+        <footer id="footer" class="container-fluid pt-5 px-5">
+          <div class="row">
+          <div style="width:23rem;" class="f1 col-sm"><h3>AVERAGE TEACHER SALARY NOTICE</h3><p>__<br>
+          West-MEC employs 68 FTE instructors<br>
+          (11 month contract)</p>
+          <p style="font-weight: 400;">Per ARS 15-903(E)</p>
+          <p style="font-weight: 400;">$66,095- average salary of all teachers employed in FY 2021<br>
+          $62,948 – average salary of all teachers employed in FY 2020<br>
+          $3,115 – increase in average teacher salary from prior year<br>
+          5% – percentage increase</p>
+          <p style="font-weight: 400;"><img class="alignnone wp-image-7878 size-full lazyloaded" src="https://west-mec.edu/wp-content/uploads/2021/07/Picture-1.png" alt="Accredited Cognia " width="210" height="210" sizes="(max-width: 210px) 100vw, 210px" srcset="https://west-mec.edu/wp-content/uploads/2021/07/Picture-1.png 210w, https://west-mec.edu/wp-content/uploads/2021/07/Picture-1-150x150.png 150w" data-ll-status="loaded"><noscript><img class="alignnone wp-image-7878 size-full" src="https://west-mec.edu/wp-content/uploads/2021/07/Picture-1.png" alt="Accredited Cognia " width="210" height="210" srcset="https://west-mec.edu/wp-content/uploads/2021/07/Picture-1.png 210w, https://west-mec.edu/wp-content/uploads/2021/07/Picture-1-150x150.png 150w" sizes="(max-width: 210px) 100vw, 210px" />
+          </noscript></p>
+          <p>&nbsp;</p>
+          </div>
+          
+      
+          <!--
+              Column 2 Resources
+          -->
+          <div class="col-sm f2"><h3>RESOURCES</h3><p>—<br>
+          <a  href="https://ivisions.mcesaaz.org/WestMEC/" rel="noopener">Employee Portal</a><br>
+          <a  href="http://sm.west-mec.org/FAMILYLINK/Login.aspx" rel="noopener">Family Link Portal</a><br>
+          <a  href="https://docs.google.com/forms/d/e/1FAIpQLScUDdyf65S5Nhk3yFAcBLU1MNDk24jBJbwgGce5q3UUKniKfQ/viewform" rel="noopener">Request a Recruiter</a><br>
+          <a  href="https://mailchi.mp/west-mec/virtual-tour">Schedule a Live Virtual Tour</a><br>
+          <a  href="https://docs.google.com/a/west-mec.org/forms/d/e/1FAIpQLSddVwWJIEM470cp_HHkO_YqvcBs86yElgkYi0TO40u4XWc9fw/viewform">Request an In Person Tour</a><br>
+          <a  href="https://west-mec.edu/donations/" rel="noopener">Tax Credit Donations</a><br>
+          <a  href="https://west-mec.onelogin.com/portal/" rel="noopener">OneLogin</a><br>
+          <a  href="https://west-mec.edu/wp-content/uploads/2021/11/Sexual-Harassment-2021-1.pdf">Sexual Harassment Policy</a></p>
+          </div>
+          <!--
+              column 3 contact
+          -->
+          <div style="width:25rem;" class="f3 col-sm"><h3>CONTACT</h3><p>—<br>
+          Western Maricopa Education Center #402<br>
+          5487 N. 99th Ave, Glendale, AZ 85305<br>
+          <a href="tel:(623) 738.0022">(623) 738-0022</a></p>
+          <p><a href="https://www.instagram.com/westmec/" rel="noopener"><img class="alignnone size-full wp-image-108 lazyloaded" src="https://west-mec.edu/wp-content/uploads/2018/02/social-instagram.png" alt="west-mec instagram" width="41" height="41" data-ll-status="loaded"><noscript><img class="alignnone size-full wp-image-108" src="https://west-mec.edu/wp-content/uploads/2018/02/social-instagram.png" alt="west-mec instagram" width="41" height="41" /></noscript></a> &nbsp;<a href="https://www.facebook.com/westmec/" rel="noopener"><img class="alignnone size-full wp-image-107 lazyloaded" src="https://west-mec.edu/wp-content/uploads/2018/02/social-facebook.png" alt="west-mec facebook" width="41" height="41" data-ll-status="loaded"><noscript><img class="alignnone size-full wp-image-107" src="https://west-mec.edu/wp-content/uploads/2018/02/social-facebook.png" alt="west-mec facebook" width="41" height="41" /></noscript>&nbsp;&nbsp;</a><a href="https://twitter.com/westmec?lang=en" rel="noopener"><img class="alignnone wp-image-110 size-full lazyloaded" src="https://west-mec.edu/wp-content/uploads/2018/02/social-twitter.png" alt="west-mec twitter" width="41" height="41" data-ll-status="loaded"><noscript><img class="alignnone wp-image-110 size-full" src="https://west-mec.edu/wp-content/uploads/2018/02/social-twitter.png" alt="west-mec twitter" width="41" height="41" /></noscript></a><a href="https://www.facebook.com/westmec/" rel="noopener">&nbsp;&nbsp;</a><a href="https://www.linkedin.com/company/west-mec-western-maricopa-education-center" rel="noopener"><img class="alignnone size-full wp-image-109 lazyloaded" src="https://west-mec.edu/wp-content/uploads/2018/02/social-linkedin.png" alt="west-mec linkedin" width="41" height="41" data-ll-status="loaded"><noscript><img class="alignnone size-full wp-image-109" src="https://west-mec.edu/wp-content/uploads/2018/02/social-linkedin.png" alt="west-mec linkedin" width="41" height="41" /></noscript>&nbsp;</a> <a href="https://www.youtube.com/user/CareerDrivenED/featured"><img class="alignnone wp-image-4387 lazyloaded" src="https://west-mec.edu/wp-content/uploads/2019/11/noun_youtube_2803504-1.png" alt="YouTube Icon" width="41" height="41" data-ll-status="loaded"><noscript><img class="alignnone wp-image-4387" src="https://west-mec.edu/wp-content/uploads/2019/11/noun_youtube_2803504-1.png" alt="YouTube Icon" width="41" height="41" /></noscript></a> <a href="https://soundcloud.com/user-9194064&nbsp;&nbsp;"><img class="alignnone wp-image-7454 lazyloaded" src="https://west-mec.edu/wp-content/uploads/2021/04/noun_Microphone_1145861-300x300.png" alt="podcast icon" width="37" height="37" data-ll-status="loaded"><noscript><img class="alignnone wp-image-7454" src="https://west-mec.edu/wp-content/uploads/2021/04/noun_Microphone_1145861-300x300.png" alt="podcast icon" width="37" height="37" /></noscript></a></p>
+          <p><a href="https://west-mec.edu/west-mec-campuses/" rel="noopener">Attendance Phone Numbers</a></p>
+          <p>West-MEC strives to provide web content that is accessible to all. We are committed to ensuring accessibility of all our web content for those with disabilities. If you are unable to access any content, please contact info@west-mec.org</p>
+          </div>
+          <!-- end footer main -->
+                  <!--       
+                  <div class="secondary">
+                  -->
+          
+                           
+                  <!--</div> end footer secondary-->
+                  </div><!-- end footer inside-->
+                  <div><p class="left">© 2021 <a href="https://west-mec.edu"></a> All Rights Reserved.</p></div>
+              </div>
+          </footer>
+    
+</body>
+<script>
+    var form = document.getElementById('Form');
+  /*Click anywhere outside and Form will Close*/
+    window.onclick = function(event) {
+      if (event.target == form) {
+        form.style.display = "none";
+      }
+    }
+  
+    function email(email)
+    {
+      var letters = /^[A-Za-z0-9.]+@[A-Za-z]{3}$/;
+      if(email.value.legth==0)
+      {
+        alert('Please enter your email');
+        email.focus();
+        return false;
+      }
+      else if(email.value.match(letters))
+      {
+        return true;
+      }
+      else
+      {
+        alert('Email must contain @');
+        email.focus();
+        return false;
+      }
+    }
+
+
+
+  
+  </script>
+</html>
+
